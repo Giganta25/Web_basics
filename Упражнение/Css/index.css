@@ -1,0 +1,71 @@
+.header {
+    padding: 80px;/*padding*/
+    text-align: center;/*Center the text*/
+    background: #FF8B45;/*Backround colour*/
+    color: white; /*WHITE TEXT*/
+}
+.header h1 {
+    font-size: 40px;
+}
+
+
+/*Style the top navbar*/
+.navbar{
+    overflow: hidden;
+    background-color:#BD2800;
+}
+.navbar a {
+    float: left;/* Make sure that the links stay side-by-side */
+    display: block;/*change the display to block*/
+    color: white;/*text colour*/
+    text-align: center;/*center the text*/
+    padding: 14px 20px;/*padding*/
+    text-decoration: none;/*underline removed*/
+}
+/*On mouse colour*/
+.navbar a:hover{
+    background-color: #FF3600;
+}
+
+
+/*sizing box of content*/
+* {
+    box-sizing: border-box;
+}
+
+/*column cont.*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*sizing the main and sidebar*/
+.side{
+    flex: 30%; /*width of sidebar from fullscreen*/
+    background-color: #f1f1f1;
+    padding: 20px;
+    ;
+}
+.main{
+    flex: 70%;
+    background-color: white;
+    padding: 20px;;
+}
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
